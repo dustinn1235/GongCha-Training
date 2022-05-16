@@ -55,5 +55,3 @@ const randItem = () => {
   const randNum = Math.floor(Math.random() * menuItems.length);
   displayTxt.textContent = menuItems[randNum];
 };
-
-//sadasdasd
