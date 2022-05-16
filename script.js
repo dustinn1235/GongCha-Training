@@ -1,6 +1,11 @@
 let categoryBtns = document.getElementById("category-btns");
-
+let displayTxt = document.getElementById("drink-display");
+let menuBtns = document.querySelectorAll(".mbtn");
 let curDiv = document.getElementById("milkfoam-btns");
+let startBtn = document.getElementById("rand-btn");
+let menuItems = new Array();
+
+// function to change category page according to respective category
 categoryBtns.addEventListener("click", (event) => {
   // check if is button click
   const isBtn = event.target.nodeName === "BUTTON";
@@ -21,19 +26,19 @@ categoryBtns.addEventListener("click", (event) => {
   curDiv = divName;
 });
 
-let displayTxt = document.getElementById("drink-display");
-let menuBtns = document.querySelectorAll(".mbtn");
-let menuItems = new Array();
+// event listener for menu item btns
 menuBtns.forEach((btn) => {
   menuItems.push(btn.textContent);
-  btn.addEventListener("click", async () => {
+  btn.addEventListener("click", () => {
     if (displayTxt.textContent === btn.textContent) {
       document.body.classList.remove("wrong");
       document.body.classList.add("correct");
 
-      await new Promise((r) => setTimeout(r, 500));
-      document.body.classList.remove("correct");
-      randItem();
+      // wait for 0.5sec then random item
+      setTimeout(() => {
+        document.body.classList.remove("correct");
+        randItem();
+      }, 500);
     } else {
       document.body.classList.remove("correct");
       document.body.classList.add("wrong");
@@ -41,7 +46,7 @@ menuBtns.forEach((btn) => {
   });
 });
 
-let startBtn = document.getElementById("rand-btn");
+// event listener for start button
 startBtn.addEventListener("click", () => {
   startBtn.classList.add("hide");
   displayTxt.classList.remove("hide");
@@ -50,8 +55,8 @@ startBtn.addEventListener("click", () => {
   randItem();
 });
 
+// function to pick a random item from menu to display
 const randItem = () => {
-  // pick random item to display
   const randNum = Math.floor(Math.random() * menuItems.length);
   displayTxt.textContent = menuItems[randNum];
 };
