@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(222, 222, 30);
+}
+
+.correct {
+  background-color: rgb(149, 237, 149);
+}
+
+.wrong {
+  background-color: rgb(246, 105, 105);
+}
+
+.container {
+  width: 100vw;
+  max-width: 80%;
+  height: 670px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0.5vw;
+  margin-top: 15px;
+  max-height: 572px;
+  overflow: auto;
+}
+
+#category-btns {
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-top: 15px;
+  border: 2px solid;
+}
+
+.mbtn {
+  border: 1px solid;
+  border-radius: 15px;
+  height: 75px;
+  width: 15vw;
+  word-wrap: break-word;
+}
+
+.cbtn {
+  height: 50px;
+}
+
+.hide {
+  display: none;
+}
+
+.controls {
+  border: 2px solid;
+  height: 50px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drink-display {
+  font-size: xx-large;
+}
+
+.rand-btn {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#sparkling-btns {
+  height: 325px;
+}
