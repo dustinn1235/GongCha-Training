@@ -1,9 +1,20 @@
 const sugarPer = ["", "70%", "50%", "30%"];
+const oneSize = [
+  "MF Black Forest",
+  "MF Black Coffee",
+  "Dalgona Coffee",
+  "Dalgona Coffee - Pearls",
+  "Coffee Frappe",
+  "Caramel Frappe",
+];
 const wmelonDrinks = [
   "MF Wintermelon",
+  "Wintermelon",
+  "MF Wintermelon Oolong",
   "Lemon Wmelon-Basil",
   "Wmelon Fresh Milk T",
   "MF Wintermelon-AiYu",
+  "Kumquat-wintermelon",
 ];
 const basicDrinks = [
   "MT - PEARLS",
@@ -313,8 +324,10 @@ const randItemSugar = (randArr) => {
 
 // fucntion random an item with size in arr
 const randItem = (randArr) => {
-  const size = Math.round(Math.random()) ? "Large" : "";
-  return [randArr[Math.floor(Math.random() * randArr.length)], size];
+  let size = Math.round(Math.random()) ? "Large" : "";
+  let name = randArr[Math.floor(Math.random() * randArr.length)];
+  if (oneSize.includes(name)) size = "";
+  return [name, size];
 };
 
 // // function to convert string to camel case
