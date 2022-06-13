@@ -29,7 +29,7 @@ body {
   box-shadow: 0 0 10px 2px;
   display: flex;
   flex-direction: column;
-  margin-left: 15rem;
+  margin-left: max(13.5rem, 16vw);
 }
 
 .btn-grid {
@@ -55,7 +55,7 @@ body {
 .mbtn:last-child {
   position: relative;
   background-color: orangered;
-  left: 19rem;
+  left: min(19rem, 26vw);
 }
 
 .mbtn {
@@ -63,7 +63,8 @@ body {
   border-color: black;
   border-radius: 15px;
   height: 4.688rem;
-  width: 11.5rem;
+  width: min(11.5rem, 15vw);
+  min-width: 10.5rem;
   word-wrap: break-word;
   margin: 0.5rem;
   font-size: xx-large;

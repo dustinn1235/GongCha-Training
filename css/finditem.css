@@ -27,7 +27,7 @@ body {
   border-radius: 5px;
   padding: 0.625rem;
   box-shadow: 0 0 10px 2px;
-  margin-left: 15rem;
+  margin-left: max(13.5rem, 16vw);
 }
 
 .btn-grid {
@@ -54,7 +54,8 @@ body {
   /* border-color: blue;
   color: blue; */
   height: 4.688rem;
-  width: 14.5rem;
+  width: min(15vw, 14.5rem);
+  min-width: 10.5rem;
   word-wrap: break-word;
   /* font-family: "Montserrat", sans-serif; */
   font-family: "Libre Baskerville", serif;
