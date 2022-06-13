@@ -159,7 +159,6 @@ const smoothie = [
   "Strawberry Cookie Smoothie",
 ];
 const allDrinks = [
-  ...basicDrinks,
   ...milkFoam,
   ...freshMT,
   ...milkTea,
