@@ -29,7 +29,7 @@ categoryBtns.addEventListener("click", (event) => {
 
 // event listener for menu item btns
 menuBtns.forEach((btn) => {
-  menuItems.push(btn.textContent);
+  if (!btn.textContent.includes("Large")) menuItems.push(btn.textContent);
   btn.addEventListener("click", () => {
     if (!displayTxt.textContent) return;
     if (displayTxt.textContent === btn.textContent) {
