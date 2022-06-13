@@ -5,14 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GongCha Quiz App</title>
-    <link href="styles.css" rel="stylesheet" />
-    <script defer src="script.js"></script>
+    <link href="css/sidebar.css" rel="stylesheet" /> 
+    <link href="css/finditem.css" rel="stylesheet" />
+    <script defer src="js/finditem.js"></script>
+    <script defer src="js/sidebar.js"></script>
   </head>
   <body>
+    <div class="sidebar">
+      <img src="https://play-lh.googleusercontent.com/nR0V0x223EqG3cxw28z5SeWIV8EOtQcu-Ru0XwThFAsW3opFxtlKvZAKBjzOiKkAsQ">
+      <a href="index.html" style="background-color: rgb(182, 182, 182);">FINDING ITEM</a>
+      <a href="sugar.html">SUGAR LEVEL</a>
+      <a href="#">WMELON SUGAR</a>
+      <!-- <button class="togglebtn" onclick="toggleNav()">&#9776;</button> -->
+    </div>
     <div class="container">
       <div class="controls">
         <button id="rand-btn" class="rand-btn btn">START</button>
-        <div id="drink-display" class="hide">sad</div>
+        <div id="drink-display" class="hide"></div>
       </div>
       <div class="menu">
         <div id="category-btns">
@@ -28,10 +37,10 @@
           <button class="cbtn">MERCHANDISE</button>
         </div>
         <div id="milkfoam-btns" class="btn-grid">
-          <button class="mbtn" id="MF Green T">MF Green T</button>
-          <button class="mbtn" id="MF Green T - Large">MF Green T - Large</button>
-          <button class="mbtn" id="MF Wintermelon">MF Wintermelon</button>
-          <button class="mbtn" id="MF Wintermelon - Large">MF Wintermelon - Large</button>
+          <button class="mbtn">MF Green T</button>
+          <button class="mbtn">MF Green T - Large</button>
+          <button class="mbtn">MF Wintermelon</button>
+          <button class="mbtn">MF Wintermelon - Large</button>
           <button class="mbtn">MF Oolong</button>
           <button class="mbtn">MF Oolong T - Large</button>
           <button class="mbtn">MF PANDA</button>
@@ -169,8 +178,8 @@
           <button class="mbtn">Lemon Ai-Yu - White Pearl - Large</button>
           <button class="mbtn">Peach Green T</button>
           <button class="mbtn">Peach Green T - Large</button>
-          <button class="mbtn">QQ Graphfruit Green T</button>
-          <button class="mbtn">QQ Graphfruit Green T - Large</button>
+          <button class="mbtn">QQ Grapefruit Green T</button>
+          <button class="mbtn">QQ Grapefruit Green T - Large</button>
           <button class="mbtn">Grapefruit Drink</button>
           <button class="mbtn">Grapefruit Drink - Large</button>
           <button class="mbtn">Honey Green T</button>
@@ -207,8 +216,8 @@
           <button class="mbtn">Strawberry Yogurt - Large</button>
           <button class="mbtn">Grapefruit Mango GT</button>
           <button class="mbtn">Grapefruit Mango GT - Large</button>
-          <button class="mbtn">Grape Yogruit w pearl</button>
-          <button class="mbtn">Grape Yogruit w pearl - Large</button>
+          <button class="mbtn">Grape Yogurt w pearl</button>
+          <button class="mbtn">Grape Yogurt w pearl - Large</button>
           <button class="mbtn">Lychee GT</button>
           <button class="mbtn">Lychee GT - Large</button>
           <button class="mbtn">Straw-Passion Earl Tea w white</button>
@@ -296,8 +305,8 @@
           <button class="mbtn">Honeydew Smoothie - Large</button>
           <button class="mbtn">Mango Yogurt Smoothie</button>
           <button class="mbtn">Mango Yogurt Smoothie - Large</button>
-          <button class="mbtn">Peach Yogurt</button>
-          <button class="mbtn">Peach Yogurt - Large</button>
+          <button class="mbtn">Peach Yogurt Smoothie</button>
+          <button class="mbtn">Peach Yogurt Smoothie - Large</button>
           <button class="mbtn">Chocolate Smoothie</button>
           <button class="mbtn">Chocolate Smoothie - Large</button>
           <button class="mbtn">Avocado Smoothie</button>
@@ -315,7 +324,7 @@
           <button class="mbtn">Grape Passion Crush - coco</button>
           <button class="mbtn">Grape Passion Crush - coco - Large</button>
           <button class="mbtn">Grape Yogurt Smoothie - white</button>
-          <button class="mbtn">>Grape Yogurt Smoothie - white - Large</button>
+          <button class="mbtn">Grape Yogurt Smoothie - white - Large</button>
           <button class="mbtn">Strawberry Cookie Smoothie</button>
           <button class="mbtn">Strawberry Cookie Smoothie - Large</button>
         </div>

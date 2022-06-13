@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+}
+
+.container {
+  width: 100rem;
+  max-width: 80%;
+  height: 41.875rem;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.625rem;
+  box-shadow: 0 0 10px 2px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rem;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0.45rem;
+  margin-top: 0.938rem;
+  max-height: 35.75rem;
+  border: 3px solid;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.mbtn:nth-child(n) {
+  background-color: rgb(240, 160, 0);
+}
+
+.mbtn:nth-child(2n) {
+  background-color: rgb(223, 0, 0);
+}
+
+.mbtn:last-child {
+  position: relative;
+  background-color: orangered;
+  left: 19rem;
+}
+
+.mbtn {
+  border: 3px solid;
+  border-color: black;
+  border-radius: 15px;
+  height: 4.688rem;
+  width: 11.5rem;
+  word-wrap: break-word;
+  margin: 0.5rem;
+  font-size: xx-large;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.controls {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+}
+
+#drink-display {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.25rem;
+  border: 3px solid;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(251, 251, 251);
+}
+
+.cbtn {
+  margin: 1.25rem 0.5rem 0.5rem 0.5rem;
+  background-color: rgb(241, 241, 241);
+  font-weight: bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  border: 2px solid;
+}
+
+.cbtn:hover {
+  opacity: 80%;
+}
+
+#drink-display.correct {
+  background-color: rgb(3, 180, 3);
+}
+
+#drink-display.wrong {
+  background-color: rgb(226, 0, 0);
+}
+
+.hide {
+  display: none;
+}

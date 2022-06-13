@@ -3,6 +3,7 @@ let displayTxt = document.getElementById("drink-display");
 let menuBtns = document.querySelectorAll(".mbtn");
 let curDiv = document.getElementById("milkfoam-btns");
 let startBtn = document.getElementById("rand-btn");
+let displayControl = document.querySelector(".controls");
 let menuItems = new Array();
 
 // function to change category page according to respective category
@@ -30,18 +31,19 @@ categoryBtns.addEventListener("click", (event) => {
 menuBtns.forEach((btn) => {
   menuItems.push(btn.textContent);
   btn.addEventListener("click", () => {
+    if (!displayTxt.textContent) return;
     if (displayTxt.textContent === btn.textContent) {
-      document.body.classList.remove("wrong");
-      document.body.classList.add("correct");
+      displayControl.classList.remove("wrong");
+      displayControl.classList.add("correct");
 
-      // wait for 0.5sec then random item
+      // wait for 0.25sec then random item
       setTimeout(() => {
-        document.body.classList.remove("correct");
+        displayControl.classList.remove("correct");
         randItem();
-      }, 500);
+      }, 250);
     } else {
-      document.body.classList.remove("correct");
-      document.body.classList.add("wrong");
+      displayControl.classList.remove("correct");
+      displayControl.classList.add("wrong");
     }
   });
 });
@@ -60,3 +62,12 @@ const randItem = () => {
   const randNum = Math.floor(Math.random() * menuItems.length);
   displayTxt.textContent = menuItems[randNum];
 };
+
+// let menuBtnsArr = Array.from(menuBtns);
+// menuBtnsArr = menuBtnsArr.filter(
+//   (btn) =>
+//     !btn.textContent.includes("Large") && !btn.textContent.includes("Hot")
+// );
+// let x = "";
+// menuBtnsArr.forEach((btn) => (x = x + `'${btn.textContent}',` + "\n"));
+// console.log(x);

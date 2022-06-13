@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+.sidebar {
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  background-color: #c10130;
+  display: block;
+  width: 15.5rem;
+  overflow: hidden;
+  text-align: center;
+  /* flex-direction: column; */
+  /* box-shadow: 0 0 0px 0px; */
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem 0.5rem;
+  font-size: 1.8rem;
+  /* font-size: 1.45rem; */
+  transition: 0.3s;
+  white-space: nowrap;
+  border-radius: 3px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Libre Baskerville", serif; */
+  color: rgba(0, 0, 0, 0.773);
+  /* color: #fefefe; */
+}
+
+img {
+  max-height: 20%;
+  width: auto;
+}
