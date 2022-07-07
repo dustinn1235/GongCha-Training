@@ -72,7 +72,6 @@ infoBtn.addEventListener("click", () => {
 });
 
 overlay.addEventListener("click", () => {
-  console.log(infoModal);
   overlay.classList.add("hide");
   infoModal.classList.add("hide");
 });
