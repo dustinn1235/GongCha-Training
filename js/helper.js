@@ -10,11 +10,10 @@ const oneSize = [
 const wmelonDrinks = [
   "MF Wintermelon",
   "Wintermelon",
-  "MF Wintermelon Oolong",
   "Lemon Wmelon-Basil",
   "Wmelon Fresh Milk T",
-  "MF Wintermelon-AiYu",
-  "Kumquat-wintermelon",
+  // "MF Wintermelon-AiYu",
+  // "Kumquat-wintermelon",
 ];
 const basicDrinks = [
   "MT - PEARLS",
@@ -311,6 +310,8 @@ const randItemSugar = (randArr) => {
   const level = sugarPer[Math.floor(Math.random() * sugarPer.length)];
 
   let item = randItem(randArr);
+
+  // filter out all drink without sugar.
   while (
     sugarLevel[item[0]] == "No Sugar" ||
     sugarLevel[item[0]] == "" ||
@@ -346,6 +347,7 @@ export {
   fruitTea,
   sparkling,
   allDrinks,
+  wmelonDrinks,
 };
 export { sugarLevel, sugarPer };
 export { randItem, randItemSugar };
