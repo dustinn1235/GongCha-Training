@@ -7,6 +7,10 @@
     <title>GongCha Quiz App</title>
     <link href="css/sugar.css" rel="stylesheet" />
     <link href="css/sidebar.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script type="module" defer src="js/sugar.js"></script>
   </head>
   <body>
@@ -24,6 +28,9 @@
     <div class="container">
       <div id="drink-display">Please pick a mode!</div>
       <div class="btn-grid">
+        <button class="info-btn">
+          <i class="fa fa-question-circle" style="font-size: 2rem"> </i>
+        </button>
         <button class="mbtn">1-1</button>
         <button class="mbtn">2-1</button>
         <button class="mbtn">3-1</button>
@@ -51,6 +58,15 @@
         <button class="cbtn">Fruit Tea</button>
         <button class="cbtn">Sparkling</button>
         <button class="cbtn">All Drinks</button>
+      </div>
+      <div class="overlay hide"></div>
+      <div class="info-modal hide">
+        <input
+          type="text"
+          id="sugar-search-input"
+          placeholder="Search for names.."
+        />
+        <ul id="search-list"></ul>
       </div>
     </div>
   </body>

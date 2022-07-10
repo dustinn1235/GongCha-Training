@@ -35,10 +35,12 @@ const checkSugar = ({ name, size, sugar, ice }) => {
 
 let item = randItem(wmelonDrinks);
 item.sugar = item.sugar ? item.sugar : "50%";
+// display item
 displayTxt.textContent = `${item.name}${item.size ? ` - ${item.size}` : ""}
 ${item.sugar ? `+) ${item.sugar}` : ""}
 ${item.ice ? `+) ${item.ice}` : ""}`;
 
+// event listener for sugar level buttons
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (btn.textContent == checkSugar(item)) {
@@ -66,11 +68,13 @@ btns.forEach((btn) => {
   });
 });
 
+// event listener for info buttons
 infoBtn.addEventListener("click", () => {
   overlay.classList.remove("hide");
   infoModal.classList.remove("hide");
 });
 
+// event listener for overlay
 overlay.addEventListener("click", () => {
   overlay.classList.add("hide");
   infoModal.classList.add("hide");

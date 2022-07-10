@@ -1,10 +1,74 @@
+import { oneSize } from "./helper.js";
+import { milkFoam, freshMT, milkTea, smoothie, fruitTea } from "./helper.js";
+
+const milkfoamDiv = document.getElementById("milkfoam-btns");
+const freshmtDiv = document.getElementById("freshmt-btns");
+const milkteaDiv = document.getElementById("milktea-btns");
+const fruitteaDiv = document.getElementById("fruittea-btns");
+const smoothieDiv = document.getElementById("smoothie-btns");
+
 let categoryBtns = document.getElementById("category-btns");
 let displayTxt = document.getElementById("drink-display");
-let menuBtns = document.querySelectorAll(".mbtn");
-let curDiv = document.getElementById("milkfoam-btns");
 let startBtn = document.getElementById("rand-btn");
 let displayControl = document.querySelector(".controls");
 let menuItems = new Array();
+let curDiv = milkfoamDiv;
+
+// display all drink of categories
+let html = "";
+Object.keys(milkFoam).forEach((item) => {
+  html = `<button class="mbtn">${item}</button>`;
+  milkfoamDiv.insertAdjacentHTML("beforeend", html);
+
+  // if item has one size => only 1 button
+  if (oneSize.includes(item)) return;
+
+  html = `<button class="mbtn">${item} - Large</button>`;
+  milkfoamDiv.insertAdjacentHTML("beforeend", html);
+});
+Object.keys(freshMT).forEach((item) => {
+  html = `<button class="mbtn">${item}</button>`;
+  freshmtDiv.insertAdjacentHTML("beforeend", html);
+
+  // if item has one size => only 1 button
+  if (oneSize.includes(item)) return;
+
+  html = `<button class="mbtn">${item} - Large</button>`;
+  freshmtDiv.insertAdjacentHTML("beforeend", html);
+});
+Object.keys(milkTea).forEach((item) => {
+  let style = "";
+  if (item == "MT - PEARLS") style = 'style="color:red"';
+  html = `<button class="mbtn" ${style}>${item}</button>`;
+  milkteaDiv.insertAdjacentHTML("beforeend", html);
+
+  // if item has one size => only 1 button
+  if (oneSize.includes(item)) return;
+
+  html = `<button class="mbtn" ${style}>${item} - Large</button>`;
+  milkteaDiv.insertAdjacentHTML("beforeend", html);
+});
+Object.keys(fruitTea).forEach((item) => {
+  html = `<button class="mbtn">${item}</button>`;
+  fruitteaDiv.insertAdjacentHTML("beforeend", html);
+
+  // if item has one size => only 1 button
+  if (oneSize.includes(item)) return;
+
+  html = `<button class="mbtn">${item} - Large</button>`;
+  fruitteaDiv.insertAdjacentHTML("beforeend", html);
+});
+Object.keys(smoothie).forEach((item) => {
+  html = `<button class="mbtn">${item}</button>`;
+  smoothieDiv.insertAdjacentHTML("beforeend", html);
+
+  // if item has one size => only 1 button
+  if (oneSize.includes(item)) return;
+
+  html = `<button class="mbtn">${item} - Large</button>`;
+  smoothieDiv.insertAdjacentHTML("beforeend", html);
+});
+let menuBtns = document.querySelectorAll(".mbtn");
 
 // function to change category page according to respective category
 categoryBtns.addEventListener("click", (event) => {

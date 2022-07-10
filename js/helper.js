@@ -35,148 +35,45 @@ const basicDrinks = [
   "QQ Passion Green T",
   "Lemon Ai-Yu - White Pearl",
 ];
-const milkFoam = [
-  "MF Green T",
-  "MF Wintermelon",
-  "MF Oolong",
-  "MF PANDA",
-  "Wintermelon",
-  "MF Black T",
-  "MF Black Forest",
-  "MF Black Coffee",
-  "MF Wintermelon-AiYu",
-  "MF Brown Sugar Oolong",
-  "MF Wintermelon Oolong",
-  "MF Panda-White only",
-  "MF Coconut Green T",
-  "MF Pineapple Green T w coco",
-  "MF Pina Colada Green T",
-  "MF Peppermint Blk-Green",
-  "MF Peppermint Choco",
-];
-const freshMT = [
-  "Wmelon Fresh Milk T",
-  "Fresh Milk-Pudding-Red Bean",
-  "Fresh Milk-Grass Jelly",
-  "Dirty Brown Sugar Fresh Milk-pearl",
-  "Matcha - MANGO",
-  "Mango Latte - MANGO",
-  "Strawberry Taro",
-  "Strawberry Matcha",
-  "Caramel Earl Grey Latte",
-  "Dalgona Coffee",
-  "Dalgona Coffee - Pearls",
-  "Honeydew Matcha",
-  "Cream Brulee Strawberry Latte",
-  "Creme Brulee Fresh MT",
-  "Strawberry Coconut Milk",
-  "Hong Kong Mango Drink",
-  "Dirty Brown-SOY - pearls",
-];
-const milkTea = [
-  "Earl Grey MT - 2J",
-  "Earl Grey MT - 3J",
-  "Caramel MT",
-  "MT - Coconut",
-  "MT",
-  "MT - PEARLS",
-  "MT-Pudding",
-  "MT-Grass Jelly",
-  "Early Grey MT-Pearls",
-  "Earl Grey MT",
-  "PANDA-MT",
-  "Coffee MT",
-  "Brown Sugar Milk Tea-pearls",
-  "Honey MT",
-  "Strawberry Milk Green T",
-  "Milk Green T",
-  "Lychee MT",
-  "Sesame MT",
-  "Panda MT-white only",
-  "Honeydew MT",
-  "Chocolate MT",
-  "Matcha MT",
-  "Taro MT",
-  "Matcha MT-bean",
-  "Taro MT-bean",
-  "Strawberry Earl MT-pearl",
-  "Peppermint Matcha MT",
-];
-const fruitTea = [
-  "Mango Green T",
-  "QQ Passion Green T",
-  "Lemon Wmelon-Basil",
-  "Peach Drink",
-  "Lychee Oolong",
-  "Lychee & Mango Green T",
-  "Lemon Ai-Yu - White Pearl",
-  "Peach Green T",
-  "QQ Grapefruit Green T",
-  "Grapefruit Drink",
-  "Honey Green T",
-  "Strawberry Green T",
-  "Lemon Honey Green T",
-  "Lychee Honey Green T",
-  "Mango Green T - MANGO",
-  "Peach Oolong T",
-  "Passion Fruit Green T",
-  "Kumquat-aloe-mango GT",
-  "Kumquat-aloe-honey GT",
-  "Kumquat-lemon juice",
-  "Kumquat-wintermelon",
-  "Kumquat-AiYu-Lime GT",
-  "Kumquat Lime GT",
-  "Peach Yogurt",
-  "Mango Yogurt",
-  "Strawberry Yogurt",
-  "Grapefruit Mango GT",
-  "Grape Yogurt w pearl",
-  "Lychee GT",
-  "Straw-Passion Earl Tea w white",
-];
-const sparkling = [
-  "Peach Sparkling",
-  "Lime Sparkling",
-  "Lychee Oolong Sparkling",
-  "Straw Lime Sparkling",
-  "Lime Grape Sparkling - coco",
-];
-const smoothie = [
-  "Mango Smoothie",
-  "Matcha Smoothie",
-  "Peach Smoothie",
-  "Strawberry Smoothie",
-  "Taro Smoothie",
-  "Red Bean Smoothie",
-  "Coffee Frappe",
-  "Caramel Frappe",
-  "Strawberry-Mango Smoothie",
-  "Peach Strawberry Smoothie",
-  "Peach Mango Smoothie",
-  "Lychee Smoothie",
-  "Honeydew Smoothie",
-  "Mango Yogurt Smoothie",
-  "Peach Yogurt Smoothie",
-  "Chocolate Smoothie",
-  "Avocado Smoothie",
-  "Strawberry Creme Brulee Smoothie",
-  "Coconut Smoothie",
-  "Pineapple Passionfruit Smoothie",
-  "Pina Colada GT Crush",
-  "Mango Grapefruit Smoothie",
-  "Grape Passion Crush - coco",
-  "Grape Yogurt Smoothie - white",
-  "Strawberry Cookie Smoothie",
-];
-const allDrinks = [
-  ...milkFoam,
-  ...freshMT,
-  ...milkTea,
-  ...smoothie,
-  ...fruitTea,
-  ...sparkling,
-];
-const sugarLevel = {
+const milkFoam = {
+  "MF Green T": "3-4",
+  "MF Wintermelon": "No Sugar",
+  "MF Oolong": "3-4",
+  "MF PANDA": "3-3",
+  Wintermelon: "No Sugar",
+  "MF Black T": "3-4",
+  "MF Black Forest": "",
+  "MF Black Coffee": "",
+  "MF Wintermelon-AiYu": "No Sugar",
+  "MF Brown Sugar Oolong": "No Sugar",
+  "MF Wintermelon Oolong": "1-4",
+  "MF Panda-White only": "3-3",
+  "MF Coconut Green T": "3-4",
+  "MF Pineapple Green T w coco": "No Sugar",
+  "MF Pina Colada Green T": "No Sugar",
+  "MF Peppermint Blk-Green": "",
+  "MF Peppermint Choco": "",
+};
+const freshMT = {
+  "Wmelon Fresh Milk T": "No Sugar",
+  "Fresh Milk-Pudding-Red Bean": "No Sugar",
+  "Fresh Milk-Grass Jelly": "No Sugar",
+  "Dirty Brown Sugar Fresh Milk-pearl": "No Sugar",
+  "Matcha - MANGO": "No Sugar",
+  "Mango Latte - MANGO": "No Sugar",
+  "Strawberry Taro": "No Sugar",
+  "Strawberry Matcha": "No Sugar",
+  "Caramel Earl Grey Latte": "",
+  "Dalgona Coffee": "1-4",
+  "Dalgona Coffee - Pearls": "1-4",
+  "Honeydew Matcha": "",
+  "Cream Brulee Strawberry Latte": "1-4",
+  "Creme Brulee Fresh MT": "3-4",
+  "Strawberry Coconut Milk": "",
+  "Hong Kong Mango Drink": "No Sugar",
+  "Dirty Brown-SOY - pearls": "No Sugar",
+};
+const milkTea = {
   "Earl Grey MT - 2J": "3-4",
   "Earl Grey MT - 3J": "3-2",
   "Caramel MT": "1-4",
@@ -204,43 +101,8 @@ const sugarLevel = {
   "Taro MT-bean": "1-1",
   "Strawberry Earl MT-pearl": "1-3",
   "Peppermint Matcha MT": "",
-
-  "Wmelon Fresh Milk T": "No Sugar",
-  "Fresh Milk-Pudding-Red Bean": "No Sugar",
-  "Fresh Milk-Grass Jelly": "No Sugar",
-  "Dirty Brown Sugar Fresh Milk-pearl": "No Sugar",
-  "Matcha - MANGO": "No Sugar",
-  "Mango Latte - MANGO": "No Sugar",
-  "Strawberry Taro": "No Sugar",
-  "Strawberry Matcha": "No Sugar",
-  "Caramel Earl Grey Latte": "",
-  "Dalgona Coffee": "1-4",
-  "Dalgona Coffee - Pearls": "1-4",
-  "Honeydew Matcha": "",
-  "Cream Brulee Strawberry Latte": "1-4",
-  "Creme Brulee Fresh MT": "3-4",
-  "Strawberry Coconut Milk": "",
-  "Hong Kong Mango Drink": "No Sugar",
-  "Dirty Brown-SOY - pearls": "No Sugar",
-
-  "MF Green T": "3-4",
-  "MF Wintermelon": "No Sugar",
-  "MF Oolong": "3-4",
-  "MF PANDA": "3-3",
-  Wintermelon: "No Sugar",
-  "MF Black T": "3-4",
-  "MF Black Forest": "",
-  "MF Black Coffee": "",
-  "MF Wintermelon-AiYu": "No Sugar",
-  "MF Brown Sugar Oolong": "No Sugar",
-  "MF Wintermelon Oolong": "1-4",
-  "MF Panda-White only": "3-3",
-  "MF Coconut Green T": "3-4",
-  "MF Pineapple Green T w coco": "No Sugar",
-  "MF Pina Colada Green T": "No Sugar",
-  "MF Peppermint Blk-Green": "",
-  "MF Peppermint Choco": "",
-
+};
+const fruitTea = {
   "Mango Green T": "1-4",
   "QQ Passion Green T": "1-4",
   "Lemon Wmelon-Basil": "No Sugar",
@@ -271,13 +133,15 @@ const sugarLevel = {
   "Grape Yogurt w pearl": "",
   "Lychee GT": "",
   "Straw-Passion Earl Tea w white": "1-3",
-
+};
+const sparkling = {
   "Peach Sparkling": "1-4",
   "Lime Sparkling": "1-4",
   "Lychee Oolong Sparkling": "1-4",
   "Straw Lime Sparkling": "No Sugar",
   "Lime Grape Sparkling - coco": "1-2",
-
+};
+const smoothie = {
   "Mango Smoothie": "1-4",
   "Matcha Smoothie": "3-4",
   "Peach Smoothie": "1-4",
@@ -304,6 +168,14 @@ const sugarLevel = {
   "Grape Yogurt Smoothie - white": "3-4",
   "Strawberry Cookie Smoothie": "",
 };
+const sugarLevel = {
+  ...milkFoam,
+  ...freshMT,
+  ...milkTea,
+  ...smoothie,
+  ...fruitTea,
+  ...sparkling,
+};
 
 // function to random an item with size and sugar level
 const randItemSugar = (randArr) => {
@@ -326,7 +198,8 @@ const randItemSugar = (randArr) => {
 // fucntion random an item with size in arr
 const randItem = (randArr) => {
   let size = Math.round(Math.random()) ? "Large" : "";
-  let name = randArr[Math.floor(Math.random() * randArr.length)];
+  let keys = Object.keys(randArr);
+  let name = randArr[Math.floor(Math.random() * keys.length)];
   if (oneSize.includes(name)) size = "";
   return [name, size];
 };
@@ -346,8 +219,8 @@ export {
   smoothie,
   fruitTea,
   sparkling,
-  allDrinks,
   wmelonDrinks,
 };
 export { sugarLevel, sugarPer };
+export { oneSize };
 export { randItem, randItemSugar };
