@@ -120,6 +120,10 @@ body {
   cursor: pointer;
 }
 
+.info-btn:hover {
+  opacity: 75%;
+}
+
 .info-modal {
   border-radius: 5px;
   background-color: white;

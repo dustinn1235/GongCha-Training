@@ -92,6 +92,10 @@ body {
   cursor: pointer;
 }
 
+.info-btn:hover {
+  opacity: 75%;
+}
+
 #info-modal {
   position: absolute;
   border-radius: 5px;
