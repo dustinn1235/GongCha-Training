@@ -173,3 +173,24 @@ table td + td {
 .hide {
   display: none;
 }
+
+@media only screen and (max-width: 1280px) {
+  body {
+    width: 79rem;
+    height: 100%;
+  }
+
+  .container {
+    margin-top: 1.3rem;
+  }
+
+  .mbtn {
+    width: 11.5rem;
+  }
+
+  .mbtn:last-child {
+    position: relative;
+    background-color: orangered;
+    left: 19rem;
+  }
+}

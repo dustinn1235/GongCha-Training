@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(250, 250, 250);
+  overflow: auto;
 }
 
 .container {
@@ -116,4 +117,19 @@ body {
 
 .hide {
   display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  body {
+    width: 79rem;
+    height: 100%;
+  }
+
+  .container {
+    margin-top: 1.3rem;
+  }
+
+  .mbtn {
+    width: 192px;
+  }
 }
