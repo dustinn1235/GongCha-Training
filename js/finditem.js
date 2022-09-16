@@ -127,11 +127,11 @@ const randItem = () => {
   displayTxt.textContent = menuItems[randNum];
 };
 
-let menuBtnsArr = Array.from(menuBtns);
-menuBtnsArr = menuBtnsArr.filter(
-  (btn) =>
-    !btn.textContent.includes("Large") && !btn.textContent.includes("Hot")
-);
-let x = "";
-menuBtnsArr.forEach((btn) => (x = x + `'${btn.textContent}',` + "\n"));
-console.log(x);
+// let menuBtnsArr = Array.from(menuBtns);
+// menuBtnsArr = menuBtnsArr.filter(
+//   (btn) =>
+//     !btn.textContent.includes("Large") && !btn.textContent.includes("Hot")
+// );
+// let x = "";
+// menuBtnsArr.forEach((btn) => (x = x + `'${btn.textContent}',` + "\n"));
+// console.log(x);
