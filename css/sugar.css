@@ -213,6 +213,7 @@ body {
 @media only screen and (max-width: 1280px) {
   .container {
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .mbtn {
@@ -223,5 +224,11 @@ body {
     position: relative;
     background-color: orangered;
     left: 19rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: none;
   }
 }

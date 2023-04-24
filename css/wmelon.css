@@ -175,6 +175,7 @@ table td + td {
   .container {
     margin-top: 3rem;
     width: 90%;
+    margin-bottom: 3rem;
   }
 
   .mbtn {
@@ -185,5 +186,11 @@ table td + td {
     position: relative;
     background-color: orangered;
     left: 19rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: none;
   }
 }

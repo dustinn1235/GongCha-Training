@@ -19,7 +19,6 @@
   white-space: nowrap;
   border-radius: 3px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  /* font-family: "Libre Baskerville", serif; */
   color: rgba(0, 0, 0, 0.773);
   /* color: #fefefe; */
 }
@@ -30,6 +29,10 @@ img {
 }
 
 .sidebar-small {
+  display: none;
+}
+
+.error {
   display: none;
 }
 
@@ -72,5 +75,19 @@ img {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.773);
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .error {
+    display: block;
+    font-family: "Libre Baskerville", serif;
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .sidebar-small .link-container {
+    display: none;
   }
 }
