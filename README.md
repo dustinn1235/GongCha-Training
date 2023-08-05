@@ -15,8 +15,7 @@ There are 3 modes:
 * For wintermelon drinks, employees must dilute the sweetness by adding water. In this mode, a random drink is presented, and employees must select the correct amount of water to add to the cup.
 
 ## Project Snapshots
-![image](https://user-images.githubusercontent.com/60798675/233888083-7748a7dc-30f8-40eb-bc2c-fdc5e8362e6d.png)
-![image](https://user-images.githubusercontent.com/60798675/233888268-d34fc533-d6ce-43e7-94b6-4b3cd56e67ab.png)
-![image](https://user-images.githubusercontent.com/60798675/233888494-6d55aaed-a0a9-4991-b26c-7b0e11dd2c60.png)
-![image](https://user-images.githubusercontent.com/60798675/233888542-7f252e1e-91b8-4263-8742-39289827ae0a.png)
-
+![image](https://github.com/dustinn1235/GongCha-Training/assets/60798675/746de9b4-fcea-457f-a81c-f14806a4ff5e)
+![image](https://github.com/dustinn1235/GongCha-Training/assets/60798675/3cc19382-58f5-49ed-872a-a224de8f6cbe)
+![image](https://github.com/dustinn1235/GongCha-Training/assets/60798675/f310864c-6fc0-4cec-bdd5-9cc3c8695777)
+![image](https://github.com/dustinn1235/GongCha-Training/assets/60798675/18de08fd-4336-459b-99d6-f3fa94ed1867)
